@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoFrame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fe5-dM-LFL">
-                                <rect key="frame" x="47" y="344" width="334" height="239"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fe5-dM-LFL">
+                                <rect key="frame" x="40" y="329" width="334" height="239"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="2A7DA22C-1F18-4824-9252-F6E6EFA6BF34_1_105_c" translatesAutoresizingMaskIntoConstraints="NO" id="e6l-Ut-Dia">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="2A7DA22C-1F18-4824-9252-F6E6EFA6BF34_1_105_c" translatesAutoresizingMaskIntoConstraints="NO" id="e6l-Ut-Dia">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="239"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="239" id="4zC-TT-g2b"/>
+                                            <constraint firstAttribute="width" constant="334" id="QRx-kU-xD5"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="e6l-Ut-Dia" firstAttribute="centerY" secondItem="fe5-dM-LFL" secondAttribute="centerY" id="hsH-fU-kAg"/>
+                                    <constraint firstItem="e6l-Ut-Dia" firstAttribute="centerX" secondItem="fe5-dM-LFL" secondAttribute="centerX" id="xQ2-vH-Gn1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="fe5-dM-LFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Igt-ma-jcp"/>
+                            <constraint firstItem="fe5-dM-LFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dBK-mX-MUO"/>
+                            <constraint firstItem="fe5-dM-LFL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gj9-Cj-PNI"/>
+                            <constraint firstItem="fe5-dM-LFL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s3N-bO-OfO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
